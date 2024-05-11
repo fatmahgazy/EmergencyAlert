@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/background_color"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/phototest"/>
+
+        </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="describtion of photo"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|end"
+        android:gravity="center|end"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Image"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

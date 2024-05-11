@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".ui.fragments.auth.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Sign Up"
+            android:textColor="@color/pink"
+            android:textSize="30sp" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill in your details to sign up"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:textSize="12sp"
+            android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="21dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textColor="@color/dimBlack"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your full name"
+        android:textSize="10sp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:layout_marginTop="12dp"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="@color/dimBlack"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:hint="Enter your phone number"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:layout_marginTop="12dp"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/dimBlack"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:hint="Enter your email"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gender"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15sp"
+           android:textColor="@color/dimBlack"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BloodType"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/dimBlack"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/dimGrey" />
+
+
+        <Spinner
+            android:id="@+id/spinnerBloodType"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="32dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/dimGrey" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+       android:textColor="@color/dimBlack"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:hint="Enter your Age"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_marginTop="12dp"
+       />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/dimBlack"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:hint="Enter your password"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/password_visibility_off"
+        android:padding="10dp"
+        android:layout_marginTop="12dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/buttom_background"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Continue"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/flLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progressTint="@color/red"
+            android:indeterminateTint="@color/red"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

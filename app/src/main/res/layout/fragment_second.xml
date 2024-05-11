@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/background_color"
+    tools:context=".ui.splachFragment.secondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-80dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivReturn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="12dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/back"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_two"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm your emergency"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our app helps you find possible solutions to save yourself until the emergency arrive to you."
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:background="@drawable/buttom_background"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.contacts.ContactsPagerFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/back"
+                android:padding="12dp"/>
+
+            <TextView
+                android:id="@+id/tvScreenName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Contacts"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imgAddContact"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_add"
+                android:padding="8dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        android:layout_marginTop="25dp"
+        app:tabTextColor="@color/gray"
+        app:tabSelectedTextColor="@color/red"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

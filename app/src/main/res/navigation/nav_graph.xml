@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstSplachFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.auth.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.auth.LogInFragment"
+        android:label="LogInFragment" >
+        <action
+            android:id="@+id/action_logInFragment_to_mainFragment2"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@+id/logInFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_logInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.contacts.ContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.profile.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.article.list.ArticlesFragment"
+        android:label="fragment_articels"
+        tools:layout="@layout/fragment_articels" >
+        <action
+            android:id="@+id/action_articlesFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+        <argument
+            android:name="article"
+            app:argType="org.codeforegypt.quickassestant.data.model.Article"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/contactsPagerFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.contacts.ContactsPagerFragment"
+        android:label="fragment_contacts_pager"
+        tools:layout="@layout/fragment_contacts_pager" >
+        <action
+            android:id="@+id/action_contactsPagerFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment2"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.more.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_moreFragment2_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_moreFragment2_to_myEmergencyFragment"
+            app:destination="@id/myEmergencyFragment" />
+        <action
+            android:id="@+id/action_moreFragment2_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@+id/moreFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.profile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishReportFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.emergencies.add.PublishReportFragment"
+        android:label="fragment_publish_report"
+        tools:layout="@layout/fragment_publish_report" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_moreFragment2"
+            app:destination="@id/moreFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_contactsPagerFragment"
+            app:destination="@id/contactsPagerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_moreFragment22"
+            app:destination="@id/moreFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_publishReportFragment"
+            app:destination="@id/publishReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.article.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+
+        <argument
+            android:name="article"
+            app:argType="org.codeforegypt.quickassestant.data.model.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstSplachFragment"
+        android:name="org.codeforegypt.quickassestant.ui.splachFragment.FirstSplachFragment"
+        android:label="fragment_first_splach"
+        tools:layout="@layout/fragment_first_splach" >
+        <action
+            android:id="@+id/action_firstSplachFragment_to_mainFragment2"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@+id/firstSplachFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_firstSplachFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="org.codeforegypt.quickassestant.ui.splachFragment.secondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="org.codeforegypt.quickassestant.ui.splachFragment.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment2"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.contacts.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactsFragment2_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emergencyFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.emergencies.emergancy.EmergencyFragment"
+        android:label="EmergencyFragment" />
+    <fragment
+        android:id="@+id/myEmergencyFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.emergencies.myemergency.MyEmergencyFragment"
+        android:label="MyEmergencyFragment" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="org.codeforegypt.quickassestant.ui.fragments.auth.password.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "743480853093",
+    "project_id": "emergencyapp-cf915",
+    "storage_bucket": "emergencyapp-cf915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743480853093:android:bb9cac7c4f7f0fe91ffc8c",
+        "android_client_info": {
+          "package_name": "org.codeforegypt.quickassestant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByWfwUUrUrmMN5hm2_lNf-b_3rodTyUXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/background_color"
+    android:gravity="center"
+    tools:context=".ui.splachFragment.FirstSplachFragment">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/first_splach"
+        android:layout_gravity="center" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Request emergency"
+      android:textSize="25dp"
+      android:textColor="@color/black"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quickly summon emergency assistance nearby with just a tap. Your safety is our priority - help is on the way."
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttom_background"/>
+
+
+
+</LinearLayout>

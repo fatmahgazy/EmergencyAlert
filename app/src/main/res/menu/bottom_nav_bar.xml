@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/runFragment"
+        android:icon="@drawable/home" />
+
+    <item
+        android:title="Contacts"
+        android:id="@+id/contactsFragment2"
+        android:icon="@drawable/call" />
+
+    <item
+        android:title="INS"
+        android:id="@+id/articlesFragment"
+        android:icon="@drawable/manuall" />
+
+    <item
+        android:title="EMG"
+        android:id="@+id/emergencyFragment"
+        android:icon="@drawable/baseline_emergency_24" />
+
+    <item
+        android:title="More"
+        android:id="@+id/moreFragment2"
+        android:icon="@drawable/setting"/>
+
+
+
+
+</menu>

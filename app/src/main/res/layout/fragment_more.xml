@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.more.MoreFragment">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardElevation="8dp">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+
+
+      <ImageView
+          android:id="@+id/btnReturn"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/back"
+          android:padding="12dp"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="More"
+       android:textColor="@color/red"
+       android:textStyle="bold"
+       android:layout_gravity="center"
+       android:textSize="16sp" />
+      </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="180dp"
+       android:src="@drawable/logoo"
+       app:itemIconTint="@color/red"
+       android:background="@color/white"
+       android:layout_marginTop="50dp"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="Act swiftly to ensure safety and resolve the issue"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textColor="@color/black"
+      android:textStyle="bold"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="80dp">
+
+
+   <ImageView
+       android:layout_width="50dp"
+       android:layout_height="30dp"
+       android:layout_marginStart="15dp"
+       android:src="@drawable/pp" />
+
+      <TextView
+          android:id="@+id/tvProfile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Profile"
+         android:layout_gravity="center"
+         android:padding="6dp"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:textColor="@color/black" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="30dp">
+
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:src="@drawable/ehistory"
+          android:layout_marginStart="15dp"/>
+
+      <TextView
+          android:id="@+id/tvMyEmergencies"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="My Emergency"
+          android:layout_gravity="center"
+          android:padding="6dp"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:textColor="@color/black" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/llLogout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="30dp">
+
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:src="@drawable/lo"
+          android:layout_marginStart="15dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Log Out"
+          android:layout_gravity="center"
+          android:layout_marginTop="-4dp"
+          android:padding="6dp"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:textColor="@color/black" />
+
+   </LinearLayout>
+</LinearLayout>
